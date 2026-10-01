@@ -1,0 +1,498 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+ body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: white; 
+            padding: 10px 20px;     
+            display: flex;
+            align-items: center;    
+        }
+
+        .logo {
+            height: 70px;           
+            width: auto;            
+        }
+
+        .eco {
+            color:darkgreen;
+        }
+
+        .care {
+            color:rgb(49, 127, 38);
+            text-align:left;
+        }
+
+        nav {
+    
+            text-align: center;     
+        }
+        nav a {
+    font-size: 18px;
+    color: #263e3d;
+    padding: 27px 0;
+    position: relative;
+    gap: 10px;
+}
+
+.nav-center {
+    flex: 1;                 
+    text-align: center; 
+    gap: 20px;      
+}
+
+nav a.active {
+    color: #13894e;
+}
+
+.space {
+    margin-right: 20px; 
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-right p {
+    font-size: 30px;
+    color: #13894e;
+}
+
+
+/* =========================
+   PAGE HERO
+   ========================= */
+
+.disposal-hero {
+    min-height: 390px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+    background:
+        linear-gradient(rgba(7, 61, 59, 0.82), rgba(7, 61, 59, 0.82)),
+        url("disposal.png") center/cover no-repeat;
+}
+
+.page-hero-content {
+    max-width: 850px;
+    color: #ffffff;
+}
+
+.page-hero-content h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 18px;
+    font-weight: 700;
+}
+
+.page-hero-content p {
+    font-size: 17px;
+    max-width: 680px;
+    margin: auto;
+    color: #e9f7f2;
+}
+
+
+/* =========================
+   COMMON CONTAINER
+   ========================= */
+
+.container {
+    width: 88%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-heading h2 {
+    font-size: 32px;
+    color: #123b3b;
+    margin-bottom: 10px;
+}
+
+.section-heading p {
+    color: #666666;
+    font-size: 15px;
+}
+
+
+/* =========================
+   INTRODUCTION
+   ========================= */
+
+.disposal-intro {
+    padding: 70px 0;
+    text-align: center;
+    background: #f7fbf8;
+}
+
+.disposal-intro h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #123b3b;
+}
+
+.disposal-intro p {
+    max-width: 820px;
+    margin: auto;
+    color: #666666;
+    font-size: 16px;
+}
+
+
+/* =========================
+   DISPOSAL STEPS
+   ========================= */
+
+.disposal-steps {
+    padding: 80px 0;
+    background: #ffffff;
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.step-card {
+    background: #ffffff;
+    border: 1px solid #e3ece7;
+    border-radius: 15px;
+    padding: 35px 25px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+}
+
+.step-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.09);
+}
+
+.step-number {
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    color: #317f26;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.step-icon {
+    width: 65px;
+    height: 65px;
+    margin: 5px auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eaf6ec;
+    border-radius: 50%;
+    font-size: 27px;
+}
+
+.step-card h3 {
+    font-size: 19px;
+    margin-bottom: 12px;
+    color: #123b3b;
+}
+
+.step-card p {
+    color: #6a6a6a;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   WASTE TYPE DISPOSAL
+   ========================= */
+
+.waste-disposal {
+    padding: 80px 0;
+    background: #f7fbf8;
+}
+
+.disposal-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.disposal-card {
+    background: #ffffff;
+    padding: 30px;
+    border-left: 5px solid #317f26;
+    border-radius: 10px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+}
+
+.disposal-card:hover {
+    transform: translateY(-5px);
+}
+
+.disposal-card h3 {
+    font-size: 21px;
+    margin-bottom: 10px;
+    color: #123b3b;
+}
+
+.disposal-card p {
+    font-size: 14px;
+    color: #666666;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   QUICK TIPS
+   ========================= */
+
+.quick-tips {
+    padding: 75px 0;
+    background: #ffffff;
+}
+
+.tips-grid {
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.tip {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #f3f9f4;
+    padding: 18px 22px;
+    border-radius: 10px;
+}
+
+.tip span {
+    min-width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #317f26;
+    color: #ffffff;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.tip p {
+    color: #555555;
+    font-size: 14px;
+}
+
+
+/* =========================
+   HELP SECTION
+   ========================= */
+
+.help-section {
+    padding: 60px 0;
+    background: #0b4845;
+}
+
+.help-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.help-content h2 {
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.help-content p {
+    color: #d9ece8;
+    font-size: 15px;
+    max-width: 650px;
+}
+
+.primary-btn {
+    display: inline-block;
+    background: #ffffff;
+    color: #317f26;
+    padding: 13px 25px;
+    border-radius: 7px;
+    font-weight: 600;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.primary-btn:hover {
+    background: #eaf6ec;
+}
+
+
+/*==Footer==*/
+footer {
+    background: #073d3b;
+    color: white;
+    padding: 25px 4% 15px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo h2 {
+    font-size: 26px;
+}
+
+.footer-logo h2 span {
+    color: #51c979;
+}
+
+.footer-logo p {
+    font-size: 16px;
+    color: #b7d2ce;
+}
+
+.footer-links {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-links a {
+    font-size: 14px;
+    color: #d2e4e1;
+}
+
+.footer-links a:hover {
+    color: #6fe0a2;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+@media (max-width: 1100px) {
+
+    .nav-links {
+        gap: 16px;
+    }
+
+    .steps-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .page-hero-content h1 {
+        font-size: 40px;
+    }
+}
+
+
+@media (max-width: 850px) {
+
+    .navbar {
+        height: auto;
+        padding: 18px 5%;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav-links {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .nav-right {
+        margin-left: auto;
+    }
+
+    .disposal-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .tips-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .help-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .nav-right .report-btn {
+        display: none;
+    }
+
+    .page-hero {
+        min-height: 320px;
+    }
+
+    .page-hero-content h1 {
+        font-size: 32px;
+    }
+
+    .page-hero-content p {
+        font-size: 14px;
+    }
+
+    .section-heading h2,
+    .disposal-intro h2 {
+        font-size: 26px;
+    }
+
+    .steps-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        width: 92%;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
